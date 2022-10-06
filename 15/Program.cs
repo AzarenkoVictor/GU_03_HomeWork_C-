@@ -3,3 +3,15 @@
 // 6 -> да
 // 7 -> да
 // 1 -> нет
+
+Console.WriteLine("Введи число дня недели");
+int a = Convert.ToInt32(Console.ReadLine());
+if (a <= 7)
+{
+    if (a == 6 || a == 7)
+    {
+        Console.WriteLine("Это выходной день");
+    }
+    else Console.WriteLine("Это будний день");
+}
+else Console.WriteLine("Не пытайся сломать систему !");

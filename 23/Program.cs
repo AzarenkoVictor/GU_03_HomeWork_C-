@@ -3,12 +3,15 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-Console.WriteLine("Введите число");
-int n = Convert.ToInt32(Console.ReadLine());
-int cube = 0;
+Console.WriteLine("Введите число"); int n = Convert.ToInt32(Console.ReadLine());
+while (n <= 0)
+{
+    Console.WriteLine("Введите число больше 0"); n = Convert.ToInt32(Console.ReadLine());
+}
+
 for (int i = 1; i <= n; i++)
 {
-    cube = (int)Math.Pow(i, 3);
+    int cube = (int)Math.Pow(i, 3);
     if (i == n)
     {
         Console.Write(cube + " ");

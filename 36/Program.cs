@@ -31,5 +31,5 @@ FillArray(array, from, to);
 Console.WriteLine("Создали массив трехзначных чисел");
 PrintArray(array);
 OddElement(array);
-Console.WriteLine("");
+Console.WriteLine();
 Console.WriteLine($"сумма элементов, стоящих на нечётных позициях равна: {sum}");

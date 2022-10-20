@@ -9,7 +9,7 @@ Console.WriteLine("Введите число b2"); double b2 = Convert.ToInt32(C
 Console.WriteLine("Введите число k2"); double k2 = Convert.ToInt32(Console.ReadLine());
 
 double x = (-b2 + b1) / (-k1 + k2);
-double y = k2 * x + b2;
+double y = k1 * x + b1;
 
 Console.WriteLine($"Две прямые пересекутся в точке ({x}; {y})");
 

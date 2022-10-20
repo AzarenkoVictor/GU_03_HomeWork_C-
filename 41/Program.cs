@@ -6,10 +6,12 @@
 
 Console.WriteLine("Введите число - подсчитаем количество положительных. Для выхода нажмите 0 "); int number = Convert.ToInt32(Console.ReadLine());
 int amount = 0;
+int amountNegative = 0;
 if (number > 0) { amount = 1; }
 while (number != 0)
 {
     Console.WriteLine($"Введите число    Введено {amount} положительных чисел"); number = Convert.ToInt32(Console.ReadLine());
     if (number > 0) { amount = amount + 1; }
+    if (number < 0) { amountNegative = amountNegative + 1; }
 }
-Console.WriteLine($"Итого: введено {amount} положительных чисел");
+Console.WriteLine($"Итого: введено {amount} положительных чисел, {amountNegative} отрицательных чисел"); // Добавил отрицательные числа в итог

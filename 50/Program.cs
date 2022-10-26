@@ -12,8 +12,8 @@
 // [1,7] -> такого элемента в массиве нет
 
 Console.WriteLine("Введите размерность массива");
-int line = Convert.ToInt32(Console.ReadLine());
 int column = Convert.ToInt32(Console.ReadLine());
+int line = Convert.ToInt32(Console.ReadLine());
 
 int[,] array = new int[line, column];
 
@@ -28,15 +28,30 @@ void FillArray(int[,] array)
     }
 }
 
+void PrintArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write($"{array[i, j]}  ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+Console.WriteLine();
 Console.WriteLine("Введите позицию элемента");
-int x = Convert.ToInt32(Console.ReadLine());
-int y = Convert.ToInt32(Console.ReadLine());
+
+int userColumn= Convert.ToInt32(Console.ReadLine());
+int userLine = Convert.ToInt32(Console.ReadLine());
 
 FillArray(array);
+PrintArray(array);
 
-
-if (x > line || y > column)
+if (userLine > line || userColumn > column)
 {
     Console.Write("Такого элемента в массиве нет");
 }
-else Console.Write($" Искомое значение {array[x, y]} ");
+else Console.Write($" Искомое значение {array[userLine-1, userColumn-1]} ");

@@ -4,10 +4,9 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-Console.WriteLine("Введите размерность массива");
-int m = Convert.ToInt32(Console.ReadLine());
-int n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите вилку значений массива");
+Console.WriteLine("Введите размерность массива"); 
+int m = Convert.ToInt32(Console.ReadLine()); int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите длинну интервала значений массива"); 
 int numbersInterval = Convert.ToInt32(Console.ReadLine());
 
 double[,] array = new double[m, n];

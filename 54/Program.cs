@@ -13,7 +13,7 @@ int column = Convert.ToInt32(Console.ReadLine()); int line = Convert.ToInt32(Con
 Console.WriteLine("Введите интервал значений массива");
 int numbersInterval = Convert.ToInt32(Console.ReadLine());
 
-int[,] array = new int[column,line];
+int[,] array = new int[column, line];
 
 void FillArray(int[,] array, int numbersInterval)
 {
@@ -34,15 +34,15 @@ void SortArrayLine(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            for (int k = 0; k < array.GetLength(1) ; k++)
+            for (int k = 0; k < array.GetLength(1); k++)
             {
-    if (array[i, j] > array[i, k])
-    {
-        temp = array[i, j];
-        array[i, j] = array[i, k];
-        array[i, k] = temp;
-    }
-}
+                if (array[i, j] > array[i, k])
+                {
+                    temp = array[i, j];
+                    array[i, j] = array[i, k];
+                    array[i, k] = temp;
+                }
+            }
         }
 
     }

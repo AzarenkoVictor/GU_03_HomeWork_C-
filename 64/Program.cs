@@ -24,3 +24,22 @@ int PrintNaturalNambers(int startPoint, int endPoint)
     }
     return PrintNaturalNambers(startPoint - 1, endPoint);
 }
+
+
+
+// Решение на основании семинара:
+//
+// Console.WriteLine("Введите число");
+// int startPoint = Convert.ToInt32(Console.ReadLine());
+
+// PrintNaturalNambers(startPoint);
+
+// void PrintNaturalNambers(int n) 
+// {
+//     if(n == 1 ) {
+//         Console.Write(n);
+//     } else {
+//         Console.Write(n);
+//         PrintNaturalNambers(n-1);
+//     }
+// }
